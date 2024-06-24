@@ -1,23 +1,38 @@
-body{
+body {
     font-size: 2.5rem;
     background-color: black;
 }
 
-.banner{
+.banner {
     display: flex;
 }
 
-.banner-1{
-    max-width: 100vh;
+.banner-1 {
+    width: 100%;
     height: auto;
 }
-.contador{
+
+
+@media(max-width: 480px; ) {
+    .banner-1 {
+        width: 30%;
+    }
+}
+
+.contador {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     padding: 1rem;
 }
-button{
+
+@media(max-width: 480px; ) {
+    button{
+        width: 10%;
+    }
+}
+
+button {
     font-size: 2rem;
     padding: 1rem;
     border-radius: 15px;
@@ -28,7 +43,7 @@ button{
 
 }
 
-#contadorMortes{
+#contadorMortes {
     color: aliceblue;
     padding: 1rem;
 }
